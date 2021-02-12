@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/*border: 0;*/
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -90,6 +90,7 @@ nav {
 
 nav a {
     text-decoration:none; 
+    font-size:.9rem;
 }
 
 .hero {
@@ -207,14 +208,20 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    font-size:.9rem;
 }
 
 
 /*About Page*/
 .about-page .top {
     text-align:left;
-    padding-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding:0 2% 20px;
+}
+
+.about-page .bottom {
+    text-align:left;
+    padding:5% 2% 5%;
 }
 
 /*Image Container --middle section of about page*/
@@ -240,12 +247,16 @@ footer nav a {
 
 .image-info a {
     margin:5% 0;
-    padding:3% 0%;
+    padding:2% 0%;
     border:2px solid black;
     border-radius: 8px;
     width: 40%;
     text-align:center;
     text-decoration: none;    
+}
+
+.image-info a:visited {
+    text-decoration: none;
 }
 .image-info p {
     padding-top:3%
