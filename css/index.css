@@ -54,6 +54,8 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    color:black;
+    font-weight:500
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,11 +68,38 @@ p {
     line-height: 1.4;
 }
 
-.container {
+.container , header{
     width: 800px;
     margin: 0 auto;
 }
 
+
+/*Header*/
+header {
+    padding-bottom: 1%;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding: 2% 5% 5% 0;
+    color:black;
+    font-size:1rem;
+}
+
+nav a {
+    text-decoration:none; 
+    font-size:.9rem;
+}
+
+.hero {
+    width:100%;
+
+}
+
+
+/*Top Content*/
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,12 +108,15 @@ p {
     border-bottom: 1px dashed black;
 }
 
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
 
+
+/*Middle Content*/
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -100,11 +132,43 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+    
 
+        /*Box Colors*/
+.box1 {
+    background-color:teal;
+}
+.box2 {
+    background-color:gold;
+}
+.box3 {
+    background-color:cadetblue
+}
+.box4 {
+    background-color:coral;
+}
+.box5 {
+    background-color:crimson;
+}
+.box6 {
+    background-color:forestgreen
+}
+.box7 {
+    background-color:darkorchid;
+}
+.box8 {
+    background-color:hotpink;
+}
+.box9 {
+    background-color:indigo
+}
+.box10 {
+    background-color:dodgerblue
+}
+        /*Box Styles*/
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,6 +176,7 @@ p {
     justify-content: center;
 }
 
+/*Bottom Content*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +208,56 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    font-size:.9rem;
+}
+
+
+/*About Page*/
+.about-page .top {
+    text-align:left;
+    border-bottom: 1px dashed black;
+    padding:0 2% 20px;
+}
+
+.about-page .bottom {
+    text-align:left;
+    padding:5% 2% 5%;
+}
+
+/*Image Container --middle section of about page*/
+.image-container {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+}
+
+.image-info {
+    width:46%;
+    padding-top:20px;
+    margin: 0 2%;
+    display:flex;
+    flex-direction:column;
+    border-bottom:1px dashed black;
+}
+
+.image-info img {
+    padding-bottom: 10px;
+    padding-top:20px
+}
+
+.image-info a {
+    margin:5% 0;
+    padding:2% 0%;
+    border:2px solid black;
+    border-radius: 8px;
+    width: 40%;
+    text-align:center;
+    text-decoration: none;    
+}
+
+.image-info a:visited {
+    text-decoration: none;
+}
+.image-info p {
+    padding-top:3%
 }
